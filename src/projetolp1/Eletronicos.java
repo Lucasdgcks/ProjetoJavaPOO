@@ -1,13 +1,23 @@
 package projetolp1;
 
+import java.util.Scanner;
+
 public class Eletronicos extends Produto{
     private String estado;
     private double valorTotalProduto;
 
-    public Eletronicos(int codigo, String nome, String fornecedor, double preco, int quantidade, String estado) {
-        super(codigo, nome, fornecedor, preco, quantidade);
-        this.estado = estado;
+    public Eletronicos(Scanner scanner) {
+        super(scanner);
+        System.out.println("Estado do produto: ");
+        this.estado = scanner.nextLine();
         this.valorTotalProduto = this.getPreco()*this.getQuantidadeProduto();
+    }
+
+   
+
+    @Override
+    public String toString() {
+        return this.getNome() + "\nEstado do Produto: " + estado +  "\nValor Unitário: R$" + this.getPreco() + "\nValor Total do Produto: " + valorTotalProduto + "\n-----------------------------------";
     }
 
     

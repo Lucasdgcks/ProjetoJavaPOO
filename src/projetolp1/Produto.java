@@ -1,5 +1,5 @@
 package projetolp1;
-
+import java.util.Scanner;
 public abstract class Produto {
     private int codigo;
     private String nome;
@@ -7,12 +7,20 @@ public abstract class Produto {
     private double preco;
     private int quantidadeProduto;
 
-    public Produto(int codigo, String nome, String fornecedor, double preco, int quantidade) {
-        this.codigo = codigo;
-        this.nome = nome;
-        this.fornecedor = fornecedor;
-        this.preco = preco;
-        this.quantidadeProduto = quantidade;
+    public Produto(Scanner scanner) {
+        System.out.println("Crie o codigo do produto: ");
+        this.codigo = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Nome do produto: ");
+        this.nome = scanner.nextLine();
+        System.out.println("Preco do produto: ");
+        this.preco = scanner.nextDouble();
+        scanner.nextLine();
+        System.out.println("Fornecedor do produto: ");
+        this.fornecedor = scanner.nextLine();
+        System.out.println("Qauntidade total do produto: ");
+        this.quantidadeProduto = scanner.nextInt();
+        scanner.nextLine();
     }
     
     

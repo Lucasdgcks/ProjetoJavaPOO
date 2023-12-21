@@ -1,0 +1,16 @@
+sdffsd
+Estado do Produto: asfdsfsd
+Valor Unitário: R$23213.0
+Valor Total do Produto: 278556.0
+-----------------------------------
+Biscoito
+Quantidade: 120
+Validade Em Meses: 12
+Valor Unitário: R$4.5
+Valor Total do Produto: R$540.0
+-----------------------------------
+Celular
+Estado do Produto: Otimo
+Valor Unitário: R$1250.5
+Valor Total do Produto: 18757.5
+-----------------------------------

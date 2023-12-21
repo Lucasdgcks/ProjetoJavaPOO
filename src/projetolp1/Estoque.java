@@ -11,13 +11,16 @@ public class Estoque {
         this.valorEstoque = 0.0;
       
     }
-    public void statusEstoque() {
-        System.out.println("---------------------------------------------");
-        System.out.println("      INFORMACOES DO ESTOQUE     ");
-        System.out.println("Quantidade Maxima do Estoque: " + this.quantidadeMax);
-        System.out.println("Quantidade no Estoque Atual: " + this.quantidadeTotal);
-        System.out.println("Valor Total do Estoque: R" + this.valorEstoque);
+
+    @Override
+    public String toString() {
+        return """
+               ---------------------------
+               ##DADOS DO ESTOQUE##
+               Quantidade Maxima: """ + quantidadeMax + "\nQuantidade Total: " + quantidadeTotal + "\nValor do Estoque: " + valorEstoque + "\n-------------------------------";
     }
+    
+    
     
     
 
