@@ -14,3 +14,8 @@ Estado do Produto: Otimo
 Valor Unitário: R$1250.5
 Valor Total do Produto: 18757.5
 -----------------------------------
+Mouse
+Estado do Produto: Bom
+Valor Unitário: R$50.0
+Valor Total do Produto: 1750.0
+-----------------------------------

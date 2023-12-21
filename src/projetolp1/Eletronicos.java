@@ -17,7 +17,7 @@ public class Eletronicos extends Produto{
 
     @Override
     public String toString() {
-        return this.getNome() + "\nEstado do Produto: " + estado +  "\nValor Unitário: R$" + this.getPreco() + "\nValor Total do Produto: " + valorTotalProduto + "\n-----------------------------------";
+        return this.getNome() + "--" +this.getCodigo()+"\nEstado do Produto: " + estado +  "\nValor Unitário: R$" + this.getPreco() + "\nValor Total do Produto: " + valorTotalProduto + "\n-----------------------------------";
     }
 
     
